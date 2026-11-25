@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Kita</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-50  text-gray-800 font-sans antialiased">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center text-center p-5">
+            <img src="https://png.pngtree.com/element_our/20190528/ourmid/pngtree-shopping-cart-icon-image_1166717.jpg"
+            class="max-w-13"
+            >
+            <a href="#home" class="text-2xl font-bold mr-auto">Streetwear</a>
+            <nav class="absolute left-1/2 transform -translate-x-1/2">
+                <ul class="flex gap-6">
+                    <li>
+                        <a href="#home" class="font-bold p-2 hover:text-blue-600">Home</a>
+                        <a href="#produk" class="font-bold p-2 hover:text-blue-600">Produk</a>
+                        <a href="#tentang" class="font-bold p-2 hover:text-blue-600">Tentang Kami</a>
+                        <a href="#kontak" class="font-bold p-2 hover:text-blue-600">Kontak</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav>
+                <a href="login.html" class="font-bold text-white bg-indigo-600 rounded-lg hover:bg-indigo-800 py-2 px-5">Login</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section  id="home" class="bg-indigo-600 text-white py-20 px-4 text-center">
+            <h1 class="font-bold text-2xl"> Selamat Datang di Streetwear </h1>
+            <p class="mb-3">“New Arrival! Yuk buruan order edisi terbaru dari brand Adidas.<br> 
+                            Tersedia berbagai pilihan warna dan ukuran, Stok terbatas, buruan order!”</p>
+            <a href="#produk" class="bg-white text-indigo-600  px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">Jelajahi Produk</a>
+        </section>
+
+        <section id="produk" class="container mx-auto px-4 py-12">
+            <h2 class="text-center text-xl font-bold mb-5">Produk Unggulan</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <!-- produk 1 -->
+                    <article class="bg-white rounded-lg p-5 shadow-md flex flex-col hover:shadow-lg transition">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStUcopLu5By_3Wgp14pOYI1pQeAu65cxOb8t_fSoxz1A&s=10" alt="Adidas"
+                        class="w-full h-48 object-contain"
+                        >
+                        <span class="text-sm text-gray-500">kategori: sepatu</span>
+                        <h3 class="text-xl font-bold">Adidas City Munchen Edge</h3>
+                        <p class="mt-2 text-gray-600">Sepatu adidas city series</p>
+                        <span class="text-xl font-bold mt-4 mb-0.5">Rp. 4.000.000</span>
+                        <button class="bg-indigo-600 text-white px-4 py-2 rounded text-sm hover:bg-indigo-700 transition">Beli</button> 
+                    </article>
+
+                    <!-- produk 2 -->
+                    <article class="bg-white rounded-lg p-5 shadow-md flex flex-col hover:shadow-lg transition">
+                        <img src="data:image/jpeg;base64,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" alt="Adidas"
+                        class="w-full h-48 object-contain"
+                        >
+                        <span class="text-sm text-gray-500">kategori: sepatu</span>
+                        <h3 class="text-xl font-bold">Adidas City Liverpool</h3>
+                        <p class="mt-2 text-gray-600">Sepatu adidas city series</p>
+                        <span class="text-xl font-bold mt-4 mb-0.5">Rp. 5.350.000</span>
+                        <button class="bg-indigo-600 text-white px-4 py-2 rounded text-sm hover:bg-indigo-700 transition">Beli</button> 
+                    </article>
+
+                    <!-- produk 3 -->
+                    <article class="bg-white rounded-lg p-5 shadow-md flex flex-col hover:shadow-lg transition">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThNd3Yqv67xS37tyzP4KgZwwSkfa0RWUu5HzH6j6o-lw&s=10" alt="Adidas"
+                        class="w-full h-48 object-contain"
+                        >
+                        <span class="text-sm text-gray-500">kategori: sepatu</span>
+                        <h3 class="text-xl font-bold">Adidas City Warszawa</h3>
+                        <p class="mt-2 text-gray-600">Sepatu adidas city series</p>
+                        <span class="text-xl font-bold mt-4 mb-0.5">Rp. 9.900.000</span>
+                        <button class="bg-indigo-600 text-white px-4 py-2 rounded text-sm hover:bg-indigo-700 transition">Beli</button> 
+                    </article>
+                    <!-- produk 4 -->
+                    <article class="bg-white rounded-lg p-5 shadow-md flex flex-col hover:shadow-lg transition">
+                        <img src="https://image.807garage.com/content/uploads/2025/5/adidas-london-size-exclusive-city-series-brown-yellow-8.jpg" alt="Adidas"
+                        class="w-full h-48 object-contain"
+                        >
+                        <span class="text-sm text-gray-500">kategori: sepatu</span>
+                        <h3 class="text-xl font-bold">Adidas City London 'Brown Yellow'</h3>
+                        <p class="mt-2 text-gray-600">Sepatu adidas city series </p>
+                        <span class="text-xl font-bold mt-4 mb-0.5">Rp. 4.950.000</span>
+                        <button class="bg-indigo-600 text-white px-4 py-2 rounded text-sm hover:bg-indigo-700 transition">Beli</button> 
+                    </article>
+                    <!-- produk 5 -->
+                    <article class="bg-white rounded-lg p-5 shadow-md flex flex-col hover:shadow-lg transition">
+                        <img src="https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/img/VqbcmM/2025/2/10/9c8f2f75-905e-4578-a975-91826409debf.jpg~tplv-aphluv4xwc-resize-jpeg:700:0.jpg" alt="Adidas"
+                        class="w-full h-48 object-contain"
+                        >
+                        <span class="text-sm text-gray-500">kategori: sepatu</span>
+                        <h3 class="text-xl font-bold">Adidas City Series Berlin</h3>
+                        <p class="mt-2 text-gray-600">Sepatu adidas city series</p>
+                        <span class="text-xl font-bold mt-4 mb-0.5">Rp. 4.500.000</span>
+                        <button class="bg-indigo-600 text-white px-4 py-2 rounded text-sm hover:bg-indigo-700 transition">Beli</button> 
+                    </article>
+                    <!-- produk 6 -->
+                    <article class="bg-white rounded-lg p-5 shadow-md flex flex-col hover:shadow-lg transition">
+                        <img src="data:image/jpeg;base64,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" alt="Adidas"
+                        class="w-full h-48 object-contain"
+                        >
+                        <span class="text-sm text-gray-500">kategori: sepatu</span>
+                        <h3 class="text-xl font-bold">Adidas City Barcelona (FX5642)</h3>
+                        <p class="mt-2 text-gray-600">Sepatu adidas city series</p>
+                        <span class="text-xl font-bold mt-4 mb-0.5">Rp. 2.500.000</span>
+                        <button class="bg-indigo-600 text-white px-4 py-2 rounded text-sm hover:bg-indigo-700 transition">Beli</button> 
+                    </article>
+                    <!-- produk 7 -->
+                    <article class="bg-white rounded-lg p-5 shadow-md flex flex-col hover:shadow-lg transition">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQysmWQq1OgHMSIFN9L9vcftoH8gsMDEuIMEjY22yvK7A&s" alt="Adidas"
+                        class="w-full h-48 object-contain"
+                        >
+                        <span class="text-sm text-gray-500">kategori: sepatu</span>
+                        <h3 class="text-xl font-bold">Adidas City Munchen Edge</h3>
+                        <p class="mt-2 text-gray-600">Sepatu adidas city series</p>
+                        <span class="text-xl font-bold mt-4 mb-0.5">Rp. 3.500.000</span>
+                        <button class="bg-indigo-600 text-white px-4 py-2 rounded text-sm hover:bg-indigo-700 transition">Beli</button> 
+                    </article>
+                    <!-- produk 8 -->
+                       <article class="bg-white rounded-lg p-5 shadow-md flex flex-col hover:shadow-lg transition">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyeraYwSqmUL_j-7HBwU03jPoH-yu97SH2YalkFy7-vA&s=10" alt="Adidas"
+                        class="w-full h-48 object-contain"
+                        >
+                        <span class="text-sm text-gray-500">kategori: sepatu</span>
+                        <h3 class="text-xl font-bold">Adidas City Shanghai</h3>
+                        <p class="mt-2 text-gray-600">Sepatu adidas city series</p>
+                        <span class="text-xl font-bold mt-4 mb-0.5">Rp. 5.699.000</span>
+                        <button class="bg-indigo-600 text-white px-4 py-2 rounded text-sm hover:bg-indigo-700 transition">Beli</button> 
+                    </article>
+            </div>
+        </section>
+        <!-- tentang kami -->
+         <section id="tentang" class="bg-slate-300 py-5 mt-4">
+            <h3 class="text-center font-bold text-gray-700 text-3xl mb-3">Tentang Kami</h3>
+            <p class="text-center text-lg text-gray-700">
+                Streetwear lahir dari kecintaan kami terhadap kultur fesyen jalanan (street culture) yang dinamis dan ekspresif. Kami percaya bahwa sepatu bukan sekadar alas kaki, melainkan representasi identitas dan rasa percaya diri Anda. Oleh karena itu, kami mendedikasikan toko ini khusus untuk mengurasi produk-produk terbaik dari merek legendaris dunia: Adidas.
+            </p>
+         </section>
+    </main>
+    <div>
+    <footer id="kontak" class=" bg-gray-800 text-gray-300 text-center py-6 mt-auto">
+        <p class="text-lg font-bold">Streetwear</p>
+        <p>Nomor WhatsApp: 0812...</p>
+        <div>Copyright © 2024 Streetwear</div>口
+    </footer>
+    </div>
+</body>
+</html> 
